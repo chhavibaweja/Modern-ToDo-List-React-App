@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# 📝 Modern Todo App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A clean, modern and fully responsive Todo application built using **React** and **Tailwind CSS**.
 
-## Available Scripts
+This project focuses on clean UI, smooth user experience, and real-world functionality beyond a basic CRUD app.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ✅ Add, Edit & Delete tasks
+- 🌙 Dark / Light Mode Toggle
+- 🔍 Search functionality
+- 🎯 Filter tasks (All / Completed / Pending)
+- 📊 Live task statistics
+- 💾 Data persistence using localStorage
+- ⌨️ Keyboard shortcuts (Enter to save, Esc to cancel)
+- 📱 Fully Responsive (Mobile + Desktop)
+- 🎨 Modern UI with smooth transitions
+- - Drag & Drop Reordering
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠 Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React (Hooks & Functional Components)
+- Tailwind CSS
+- LocalStorage API
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ⚙️ Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/chhavibaweja/modern-todo-app.git
+cd modern-todo-app
+npm install
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 📌 What I Learned
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- State management using React Hooks
+- Dark mode implementation
+- Responsive UI design
+- Clean component structure
+- Handling long dynamic text wrapping
+- Local storage persistence
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🌟 Future Improvements
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Backend Integration
+- Due Dates & Priority Tags
+- Animations
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 👩‍💻 Author
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Built with ❤️ by **Chhavi Baweja** & Chatgpt obviously ;)
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you like this project, feel free to ⭐ the repository!
