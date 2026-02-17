@@ -21,7 +21,8 @@ This project focuses on clean UI, smooth user experience, and real-world functio
 
 ---
 
-## Live Demo - moderntolist.netlify.app
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge)](https://moderntolist.netlify.app)
+
 
 ---
 
