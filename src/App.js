@@ -16,6 +16,9 @@ export default function App() {
     () => localStorage.getItem("theme") === "dark"
   );
 
+  /* ✅ DRAG STATE ADDED */
+  const [dragIndex, setDragIndex] = useState(null);
+
   /* ================= THEME ================= */
   useEffect(() => {
     if (dark) {
@@ -78,6 +81,25 @@ export default function App() {
     setTodos(updated);
     setEditIndex(null);
     setEditText("");
+  };
+
+  /* ✅ DRAG FUNCTIONS ADDED */
+
+  const handleDragStart = (index) => {
+    setDragIndex(index);
+  };
+
+  const handleDrop = (index) => {
+    if (dragIndex === null || dragIndex === index) return;
+
+    const updated = [...todos];
+    const draggedItem = updated[dragIndex];
+
+    updated.splice(dragIndex, 1);
+    updated.splice(index, 0, draggedItem);
+
+    setTodos(updated);
+    setDragIndex(null);
   };
 
   const filteredTodos = todos
@@ -193,9 +215,13 @@ export default function App() {
             {filteredTodos.map((todo, index) => (
               <li
                 key={todo.id}
+                draggable
+                onDragStart={() => handleDragStart(index)}
+                onDragOver={(e) => e.preventDefault()}
+                onDrop={() => handleDrop(index)}
                 className="flex items-start justify-between gap-3 bg-slate-100 dark:bg-slate-800 px-4 py-3 rounded-xl transition-all duration-300 hover:scale-[1.01]"
               >
-                {/* LEFT SIDE (number + text) */}
+                {/* LEFT SIDE */}
                 <div className="flex gap-3 flex-1 min-w-0">
                   <span className="text-indigo-500 font-medium shrink-0">
                     {index + 1}.
@@ -230,7 +256,7 @@ export default function App() {
                   </div>
                 </div>
 
-                {/* RIGHT SIDE (icons) */}
+                {/* RIGHT SIDE */}
                 <div className="flex gap-3 text-sm shrink-0 items-start">
                   {editIndex === index ? (
                     <button onClick={saveEdit} className="text-green-500">
